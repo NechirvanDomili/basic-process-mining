@@ -6,10 +6,16 @@ def process_event_log(filename):
     df['Timestamp'] = pd.to_datetime(df['Timestamp'])
     df = df.sort_values(by=['Case', 'Timestamp'])
     
+    
     num_events = len(df)
     num_cases = df['Case'].nunique()
     num_activities = df['Activity'].nunique()
-    case_variants = df.groupby('Case')['Activity'].apply(lambda x: '-'.join(x))
+
+    def join_activities(activities):
+        return '-'.join(activities)
+
+    case_variants = df.groupby('Case')['Activity'].apply(join_activities)
+    print(case_variants.unique())
     num_variants = case_variants.nunique()
     
     print(f"# Events: {num_events}")

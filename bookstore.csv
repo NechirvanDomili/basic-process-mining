@@ -1,0 +1,15 @@
+Case;Activity;Timestamp
+1;enter bookstore;2024-07-24T17:48:19.362Z
+1;browse books;2024-07-24T17:49:24.362Z
+1;order book;2024-07-24T17:51:21.362Z
+1;leave bookstore;2024-07-24T17:52:49.362Z
+2;enter bookstore;2024-07-24T17:48:19.362Z
+2;browse books;2024-07-24T17:49:34.362Z
+2;order book;2024-07-24T17:50:44.362Z
+2;leave bookstore;2024-07-24T17:52:40.362Z
+3;enter bookstore;2024-07-24T17:48:19.362Z
+3;browse books;2024-07-24T17:49:22.362Z
+3;select & pay book;2024-07-24T17:50:28.362Z
+3;leave bookstore;2024-07-24T17:52:10.362Z
+4;enter bookstore;2024-07-24T17:48:19.362Z
+4;browse books;2024-07-24T17:49:41.362Z
